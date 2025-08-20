@@ -10,7 +10,26 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+# dnf5 install -y tmux 
+
+# environments
+dnf5 install -y emacs
+dnf5 install -y emacs-goodies
+dnf5 install -y emacs-magit
+dnf5 install -y emacs-lua
+dnf5 install -y julia
+
+# other wayland sessions
+dnf5 install -y wayfire
+dnf5 install -y wayfire-config-manager
+dnf5 install -y wf-shell
+dnf5 install -y wf-config
+
+# GUIs
+dnf5 install -y fuzzel
+
+# Customization
+dnf5 install -y numix-icon-theme-circle
 
 # Use a COPR Example:
 #
